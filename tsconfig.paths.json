@@ -7,7 +7,7 @@
       "@hooks/*": ["src/hooks/*"],
       "@pages/*": ["src/pages/*"],
       "@utils/*": ["src/utils/*"],
-      "@screens/*": ["src/screens/*"],
+      "@screens/*": ["src/screens/*"]
     }
   }
 }
