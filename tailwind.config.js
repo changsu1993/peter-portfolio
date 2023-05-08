@@ -2,6 +2,15 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fontSize: {
+      '9vw': [
+        '9vw',
+        {
+          lineHeight: '12vw',
+          fontWeight: 400,
+        },
+      ],
+    },
     extend: {
       colors: {
         'light-grey': '#909096',
@@ -15,6 +24,13 @@ module.exports = {
         13: '4rem',
         14: '4.5rem',
         15: '5rem',
+        55: '12vw',
+      },
+      zIndex: {
+        99: '99',
+      },
+      padding: {
+        '8vw': '8vw',
       },
     },
   },

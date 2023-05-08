@@ -1,5 +1,6 @@
 import React from 'react';
 import SideBar from '@components/SideBar';
+import Splash from '@components/Splash';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         </p>
           Learn React
       </header>
-      <SideBar/>
+      <Splash/>
     </div>
   );
 }
