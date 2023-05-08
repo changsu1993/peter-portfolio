@@ -1,4 +1,5 @@
 import React from 'react';
+import SideBar from '@components/SideBar';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         </p>
           Learn React
       </header>
+      <SideBar/>
     </div>
   );
 }
