@@ -1,10 +1,9 @@
 export const useAnimation = () => {
-
   const hoverAnimation = {
     hover: {
       scale: 0.98,
-    }
-  }
+    },
+  };
 
   const revealAnimation = {
     initial: {
@@ -15,14 +14,13 @@ export const useAnimation = () => {
       opacity: 1,
       transition: {
         duration: 2,
-      }
-    }
-  }
+      },
+    },
+  };
 
   const transition = {
     duration: 0.8,
-  }
+  };
 
-  return { hoverAnimation, revealAnimation, transition }
-  
-}
+  return { hoverAnimation, revealAnimation, transition };
+};
