@@ -6,6 +6,7 @@
     },
     "extends": [
         "plugin:react/recommended",
+        "plugin:prettier/recommended",
         "standard-with-typescript"
     ],
     "overrides": [
@@ -18,5 +19,9 @@
         "react"
     ],
     "rules": {
-    }
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    },
+    
+    "comma-dangle": ["error", "never"]
 }
