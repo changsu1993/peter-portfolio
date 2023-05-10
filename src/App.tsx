@@ -1,18 +1,13 @@
 import React from 'react';
-import SideBar from '@components/SideBar';
+// import SideBar from '@components/SideBar';
 import Splash from '@components/Splash';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        Learn React
-      </header>
+    <Router>
       <Splash />
-    </div>
+    </Router>
   );
 }
 
