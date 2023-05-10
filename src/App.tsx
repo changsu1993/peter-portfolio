@@ -9,9 +9,9 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-          Learn React
+        Learn React
       </header>
-      <Splash/>
+      <Splash />
     </div>
   );
 }
