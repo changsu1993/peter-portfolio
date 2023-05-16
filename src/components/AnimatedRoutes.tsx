@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Main from '@pages/index';
+import Splash from './Splash';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -11,6 +12,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/main" element={<Main />} />
+        <Route path="/" element={<Splash />} />
       </Routes>
     </AnimatePresence>
   );
