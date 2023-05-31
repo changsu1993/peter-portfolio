@@ -17,46 +17,96 @@ const Section01 = () => {
 
   const item = {
     hidden: { opacity: 0, scale: 0 },
-    visible: { opacity: 1, scale: 1 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: 'spring',
+        duration: 1,
+        // times: [0, 0.2, 0.5, 0.8, 1],
+      },
+    },
   };
 
   return (
     <div>
       <h1 aria-label=" Hi, I'm Peter, Frontend Developer" className="text-9xl">
         <motion.ul variants={list} initial="hidden" animate="visible">
-          {[
-            ['H'],
-            ['i'],
-            [','],
-            ['I'],
-            ["'"],
-            ['m'],
-            [' P'],
-            ['e'],
-            ['t'],
-            ['e'],
-            ['r'],
-          ].map(([title, idx]) => (
-            <motion.span
+          {[['H'], ['i'], [',']].map(([title, idx]) => (
+            <motion.p
               variants={item}
               key={idx}
-              // className="inline-block"
+              className="inline-block"
               // initial={{ opacity: 0, scale: 0 }}
               // animate={{
               //   opacity: 1,
               //   scale: 1,
-              //   // rotateZ: 360,
+              // }}
+              transition={{
+                delay: 2,
+              }}
+            >
+              {title}
+            </motion.p>
+          ))}
+        </motion.ul>
+        <motion.ul variants={list} initial="hidden" animate="visible">
+          {[['I'], ["'"], ['m'], [' P'], ['e'], ['t'], ['e'], ['r']].map(
+            ([title, idx]) => (
+              <motion.p
+                variants={item}
+                key={idx}
+                className="inline-block"
+                // initial={{ opacity: 0, scale: 0 }}
+                // animate={{
+                //   opacity: 1,
+                //   scale: 1,
+                // }}
+                // transition={{
+                //   duration: 2,
+                //   when: 'beforeChildren',
+                //   type: 'spring',
+                //   times: [0, 0.2, 0.5, 0.8, 1],
+                // }}
+              >
+                {title}
+              </motion.p>
+            ),
+          )}
+        </motion.ul>
+        <motion.ul variants={list} initial="hidden" animate="visible">
+          {[
+            ['W'],
+            ['e'],
+            ['b'],
+            ['D'],
+            ['e'],
+            ['v'],
+            ['e'],
+            ['l'],
+            ['o'],
+            ['p'],
+            ['e'],
+            ['r'],
+          ].map(([title, idx]) => (
+            <motion.p
+              variants={item}
+              key={idx}
+              className="inline-block"
+              // initial={{ opacity: 0, scale: 0 }}
+              // animate={{
+              //   opacity: 1,
+              //   scale: 1,
               // }}
               // transition={{
-              //   // duration: 2,
+              //   duration: 2,
               //   when: 'beforeChildren',
               //   type: 'spring',
               //   times: [0, 0.2, 0.5, 0.8, 1],
               // }}
             >
-              {title === 'I' && <br />}
               {title}
-            </motion.span>
+            </motion.p>
           ))}
         </motion.ul>
         {/* <motion.span
