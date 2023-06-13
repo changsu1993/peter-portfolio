@@ -29,7 +29,7 @@ const Section01 = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#1d1d1d]">
       <h1 aria-label=" Hi, I'm Peter, Frontend Developer" className="text-9xl">
         <motion.ul variants={list} initial="hidden" animate="visible">
           {[['H'], ['i'], [',']].map(([title, idx]) => (

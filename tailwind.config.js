@@ -12,6 +12,9 @@ module.exports = {
       ],
     },
     extend: {
+      fontFamily: {
+        times: ['Times New Roman, Times, serif'],
+      },
       colors: {
         'light-grey': '#909096',
         'dark-grey': '#181818',
