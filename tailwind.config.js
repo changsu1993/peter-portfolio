@@ -35,6 +35,12 @@ module.exports = {
       padding: {
         '8vw': '8vw',
       },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(-7px)' },
+          '100%': { transform: 'translateX(7px)' },
+        },
+      },
     },
   },
   plugins: [],
