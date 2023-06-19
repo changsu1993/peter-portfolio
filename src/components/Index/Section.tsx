@@ -4,15 +4,19 @@ import Logo from '../../assets/images/name.png';
 
 const Section = () => {
   return (
-    <section className="flex items-center min-h-screen pl-[1.5rem]">
-      <div>
-        <h1 className="text-[3.2rem] tracking-[-3px]">
+    <section className="flex items-center min-h-screen pl-[1.5rem] min-[950px]:pl-[13rem] ">
+      <div className="relative">
+        <h1 className="text-[3.2rem] tracking-[-3px] min-[950px]:text-[6.3rem] min-[950px]:leading-[85px] min-[950px]:tracking-[-3px] before:content-['<h1>'] before:absolute before:top-[-60px] before:left-[-10px] before:text-[1.2rem] before:tracking-[3px] before:text-[#666565] before:font-['Consolas'] after:content-['</h1>'] after:absolute after:bottom-[130px] after:right-[-70px] after:text-[1.2rem] after:text-[#666565] after:font-['Consolas'] after:tracking-[3px]">
           Hi, <br /> I&#39;m{' '}
-          <img className="inline" src={Logo} alt="P" width="53" height="72" />
+          <img
+            className="inline mt-[-23px] mr-[-8px] w-[60px] h-[72px] min-[950px]:w-[100px] min-[950px]:h-[112px]"
+            src={Logo}
+            alt="P"
+          />
           eter,
           <br /> web Developer
         </h1>
-        <p className="relative mt-[30px] text-[14px] text-[#a2a2a3] tracking-[3px]">
+        <p className="relative mt-[30px] text-[14px] text-[#a2a2a3] tracking-[3px] min-[950px]:text-[1rem]">
           Front End Developer / Wordpress Expert
         </p>
         <br />
@@ -30,7 +34,7 @@ const Section = () => {
           </div>
         </a>
       </div>
-      <div className="absolute right-[-30px] bottom-[3.3rem] flex items-center justify-center rotate-[90deg] text-[14px]">
+      <div className="absolute right-[-30px] bottom-[3.3rem] flex items-center justify-center rotate-[90deg] text-[14px] min-[950px]:right-[-30px] min-[950px]:bottom-[3.3rem]">
         <span className="inline-block animate-[scroll_0.5s_linear_infinite_alternate-reverse]">
           scroll down
         </span>
@@ -48,7 +52,7 @@ const Section = () => {
           />
         </svg>
       </div>
-      <div className="absolute left-[-30px] bottom-[3.3rem] flex items-center justify-center rotate-[90deg] text-[14px]">
+      <div className="absolute left-[-30px] bottom-[3.3rem] flex items-center justify-center rotate-[90deg] text-[14px] min-[950px]:left-[110px] min-[950px]:right-[auto]">
         <span className="inline-block animate-[scroll_0.5s_linear_infinite_alternate-reverse]">
           scroll down
         </span>

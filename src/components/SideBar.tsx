@@ -1,11 +1,17 @@
 import React from 'react';
 
-const SideBar = () => {
+const SideBar = ({ open }: { open: boolean }) => {
   return (
-    <aside className="fixed top-0 left-0 w-full h-full z-[1]">
-      <div className="flex flex-col items-center justify-between h-screen">
-        <div className="w-full bg-black min-h-[32vh] items-center justify-center flex-col flex">
-          <a className="grid text-center no-underline place-items-center">
+    <aside
+      className={
+        open
+          ? 'fixed top-0 left-0 w-full h-[100%] z-[1] overflow-hidden bg-[#191919] '
+          : 'fixed top-0 left-0 w-full h-[0%] z-[1] overflow-hidden bg-[#191919] min-[950px]:w-[10%] min-[950px]:h-[100%]'
+      }
+    >
+      <div className="flex flex-col items-center justify-between h-screen min-[950px]:h-[80%]">
+        <div className="w-full bg-black min-h-[32vh] items-center justify-center flex-col flex min-[950px]:min-h-[25vh]">
+          <a className="grid text-center no-underline place-items-center min-[950px]:h-[auto]">
             <p className="font-semibold text-light-teal text-8xl">P</p>
             <p className="mt-[-96px] font-semibold text-light-pink text-8xl ml-4">
               P
@@ -36,8 +42,8 @@ const SideBar = () => {
             </a>
           ))}
         </nav>
-        <ul className="flex mb-[30px] list-none">
-          <li className="w-[30px] text-[1rem]">
+        <ul className="flex mb-[30px] list-none min-[950px]:mb-[0px] w-[60%] justify-between">
+          <li className="min-[950px]:text-center min-[950px]:text-[1rem]">
             <a
               rel="Github"
               href="https://github.com/changsu1993"
@@ -55,7 +61,7 @@ const SideBar = () => {
               </svg>
             </a>
           </li>
-          <li className="w-[30px] text-[1rem]">
+          <li className="text-[1rem] min-[950px]:text-center min-[950px]:text-[1rem]">
             <a
               rel="Blog"
               href="https://changsu1993.github.io/"
@@ -74,7 +80,7 @@ const SideBar = () => {
               </svg>
             </a>
           </li>
-          <li className="w-[30px] text-[1rem]">
+          <li className="text-[1rem] min-[950px]:text-center min-[950px]:text-[1rem]">
             <a
               rel="About"
               href="/about"
