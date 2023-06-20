@@ -1,12 +1,12 @@
 import React from 'react';
-// import SideBar from '@components/SideBar';
-import Splash from '@components/Splash';
 import { BrowserRouter as Router } from 'react-router-dom';
+
+import AnimatedRoutes from '@components/AnimatedRoutes';
 
 function App() {
   return (
-    <Router>
-      <Splash />
+    <Router basename={process.env.PUBLIC_URL}>
+      <AnimatedRoutes />
     </Router>
   );
 }
