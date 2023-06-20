@@ -4,6 +4,7 @@ import SideBar from '@components/SideBar';
 // import Section01 from '@components/\bIndex/Section01';
 import Header from '@components/Header';
 import Section from '@components/\bIndex/Section';
+import Section02 from '@components/\bIndex/Section02';
 
 const Main = () => {
   const [open, setOpen] = useState(false);
@@ -14,6 +15,7 @@ const Main = () => {
       <SideBar open={open} />
       {/* <Section01 /> */}
       <Section />
+      <Section02 />
     </>
   );
 };

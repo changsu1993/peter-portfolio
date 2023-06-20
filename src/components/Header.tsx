@@ -34,7 +34,7 @@ const Header = ({
   };
 
   return (
-    <header className="fixed flex top-0 w-[95%] h-[10vh] m-auto justify-between items-center z-[2] min-[950px]:justify-end">
+    <header className="fixed flex top-0 w-[95%] h-[10vh] m-auto justify-between items-center z-[2] min-[1200px]:justify-end">
       <div className="flex items-center bg-[#1b1b1b] rounded-[5px] p-[7px]">
         <audio ref={radioRef} loop>
           <source src={Bgm} />
@@ -85,7 +85,7 @@ const Header = ({
           )}
         </div>
       </div>
-      <div className="flex items-center min-[950px]:hidden">
+      <div className="flex items-center min-[1200px]:hidden">
         {open ? (
           <div
             className="cursor-pointer"

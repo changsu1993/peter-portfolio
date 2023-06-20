@@ -20,6 +20,7 @@ module.exports = {
         'dark-grey': '#181818',
         'light-teal': '#08FDD8',
         'light-pink': '#fd2155',
+        'image-color': 'rgba(255, 255, 255, 0.1)',
       },
       lineHeight: {
         11: '3rem',
@@ -40,6 +41,9 @@ module.exports = {
           '0%': { transform: 'translateX(-7px)' },
           '100%': { transform: 'translateX(7px)' },
         },
+      },
+      backgroundImage: {
+        'circle-pattern': "url('/src/assets/images/circle.png')",
       },
     },
   },

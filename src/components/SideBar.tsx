@@ -6,12 +6,12 @@ const SideBar = ({ open }: { open: boolean }) => {
       className={
         open
           ? 'fixed top-0 left-0 w-full h-[100%] z-[1] overflow-hidden bg-[#191919] '
-          : 'fixed top-0 left-0 w-full h-[0%] z-[1] overflow-hidden bg-[#191919] min-[950px]:w-[10%] min-[950px]:h-[100%]'
+          : 'fixed top-0 left-0 w-full h-[0%] z-[1] overflow-hidden bg-[#191919] min-[1200px]:w-[10%] min-[1200px]:h-[100%]'
       }
     >
-      <div className="flex flex-col items-center justify-between h-screen min-[950px]:h-[80%]">
-        <div className="w-full bg-black min-h-[32vh] items-center justify-center flex-col flex min-[950px]:min-h-[25vh]">
-          <a className="grid text-center no-underline place-items-center min-[950px]:h-[auto]">
+      <div className="flex flex-col items-center justify-between h-screen min-[1200px]:h-[80%]">
+        <div className="w-full bg-black min-h-[32vh] items-center justify-center flex-col flex min-[1200px]:min-h-[25vh]">
+          <a className="grid text-center no-underline place-items-center min-[1200px]:h-[auto]">
             <p className="font-semibold text-light-teal text-8xl">P</p>
             <p className="mt-[-96px] font-semibold text-light-pink text-8xl ml-4">
               P
@@ -42,8 +42,8 @@ const SideBar = ({ open }: { open: boolean }) => {
             </a>
           ))}
         </nav>
-        <ul className="flex mb-[30px] list-none min-[950px]:mb-[0px] w-[60%] justify-between">
-          <li className="min-[950px]:text-center min-[950px]:text-[1rem]">
+        <ul className="flex mb-[30px] list-none min-[1200px]:mb-[0px] w-[60%] justify-between">
+          <li className="min-[1200px]:text-center min-[1200px]:text-[1rem]">
             <a
               rel="Github"
               href="https://github.com/changsu1993"
@@ -61,7 +61,7 @@ const SideBar = ({ open }: { open: boolean }) => {
               </svg>
             </a>
           </li>
-          <li className="text-[1rem] min-[950px]:text-center min-[950px]:text-[1rem]">
+          <li className="text-[1rem] min-[1200px]:text-center min-[1200px]:text-[1rem]">
             <a
               rel="Blog"
               href="https://changsu1993.github.io/"
@@ -80,7 +80,7 @@ const SideBar = ({ open }: { open: boolean }) => {
               </svg>
             </a>
           </li>
-          <li className="text-[1rem] min-[950px]:text-center min-[950px]:text-[1rem]">
+          <li className="text-[1rem] min-[1200px]:text-center min-[1200px]:text-[1rem]">
             <a
               rel="About"
               href="/about"
